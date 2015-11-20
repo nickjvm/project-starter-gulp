@@ -1,5 +1,6 @@
 /*global alert*/
 const test = 'hello';
+let test8='hi';
 
 let test2= {
 	hi: 'hello!',
@@ -10,5 +11,5 @@ function test5() {
 }
 
 if (test) {
-    alert('2');
+    //alert('2');
 }

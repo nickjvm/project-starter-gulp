@@ -8,12 +8,12 @@ var concat = require('gulp-concat');
 
 var scssTask = function() {
     console.log('starting scss...');
-    return gulp.src('./scss/global.scss')
+    return gulp.src(config.root.src + config.tasks.scss.src + '/**/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(autoprefixer(config.tasks.scss.autoprefixer))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./dist/client/'));
+        .pipe(gulp.dest(config.root.dest + config.tasks.scss.dest));
 };
 
 

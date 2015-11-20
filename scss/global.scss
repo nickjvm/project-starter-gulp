@@ -1,4 +1,8 @@
 body {
-    background: blue;
-    display: flex;
+
+    box-sizing: border-box;
+
+    p {
+        font-family: sans-serif;
+    }
 }
