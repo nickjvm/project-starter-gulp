@@ -1,3 +1,5 @@
+var config = require('./config');
+
 var gulp = require('gulp');
 var sourcemaps = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
@@ -9,6 +11,7 @@ var scssTask = function() {
     return gulp.src('./scss/global.scss')
         .pipe(sourcemaps.init())
         .pipe(sass())
+        .pipe(autoprefixer(config.tasks.scss.autoprefixer))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./dist/client/'));
 };
