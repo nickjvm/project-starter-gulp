@@ -1,0 +1,28 @@
+{
+  "name": "project-starter-gulp",
+  "version": "1.0.0",
+  "description": "Gulp Starter Kit",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm update && gulp build && gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick VanMeter",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-eslint": "^4.1.5",
+    "babel-plugin-jsx-display-if": "^1.0.2",
+    "babel-plugin-object-assign": "^1.2.1",
+    "babel-preset-es2015": "^6.1.18",
+    "eslint": "^1.9.0",
+    "eslint-loader": "^1.1.1",
+    "eslint-plugin-react": "^3.9.0",
+    "eslint-plugin-require-in-package": "^1.0.3",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}
