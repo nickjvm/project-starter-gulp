@@ -4,7 +4,7 @@ let test2= {
 	hi: 'hello',
 };
 
-function test() {
+function test5() {
 	return true;
 }
 

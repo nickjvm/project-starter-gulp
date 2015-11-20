@@ -4,8 +4,12 @@
   "description": "Gulp Starter Kit",
   "main": "index.js",
   "scripts": {
-    "dev": "npm update && gulp build && gulp watch",
+    "dev": "npm update && gulp start-dev",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nickjvm/project-starter-gulp"
   },
   "author": "Nick VanMeter",
   "license": "ISC",
