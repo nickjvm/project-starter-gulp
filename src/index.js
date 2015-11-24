@@ -1,15 +1,6 @@
-/*global alert*/
-const test = 'hello';
-let test8='hi';
+/*global document*/
+import React from 'react';
+import ReactDOM from 'react-dom';
+import MyComponent from './components/MyComponent/MyComponentView';
 
-let test2= {
-	hi: 'hello!',
-};
-
-function test5() {
-	return true;
-}
-
-if (test) {
-    //alert('2');
-}
+ReactDOM.render(<MyComponent/>, document.getElementById('application'));

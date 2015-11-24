@@ -9,5 +9,5 @@ var watch = require('./scripts/watch');
 var connect = require('./scripts/connect');
 
 gulp.task('start-dev', function(cb) {
-	gulpSequence('build','scss','watch', 'connect', cb);
+	gulpSequence('bundle','scss','watch', 'connect', cb);
 });
