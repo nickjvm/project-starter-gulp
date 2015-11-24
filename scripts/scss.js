@@ -1,10 +1,10 @@
+/*eslint-disable no-console */
 var config = require('./config');
 
 var gulp = require('gulp');
 var sourcemaps = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
-var concat = require('gulp-concat');
 
 var scssTask = function() {
     console.log('starting scss...');

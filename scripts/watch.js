@@ -1,3 +1,4 @@
+/*eslint-disable no-console */
 var config = require('./config');
 var gulp   = require('gulp');
 var path   = require('path');

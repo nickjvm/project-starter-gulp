@@ -1,3 +1,4 @@
+/*eslint-disable no-console */
 var config = require('./config');
 
 var gulp = require('gulp');
@@ -7,19 +8,9 @@ var buffer = require('vinyl-buffer');
 var browserify = require('browserify');
 var watchify = require('watchify');
 var babel = require('babelify');
-var browserSync = require('browser-sync').create();
 
 function compile(watch) {
   var bundler = watchify(browserify(config.root.src + config.tasks.build.src + '/index.js', { debug: true }).transform(babel));
-
-  browserSync.init({
-    proxy: 'localhost:8000',
-    notify: false,
-    options: {
-        ignored: '*.map',
-    },
-    open: false,
-  });
 
   function rebundle() {
     bundler.bundle()
@@ -29,7 +20,6 @@ function compile(watch) {
       .pipe(sourcemaps.init({ loadMaps: true }))
       .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest(config.root.dest + config.tasks.build.dest))
-      .pipe(browserSync.stream());
   }
 
   if (watch) {
