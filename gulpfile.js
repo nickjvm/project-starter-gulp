@@ -1,3 +1,4 @@
+/*eslint-disable no-unused-vars */
 //require('babel-core/register');
 
 var gulp = require('gulp');
