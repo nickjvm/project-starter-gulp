@@ -14,9 +14,13 @@
   "author": "Nick VanMeter",
   "license": "ISC",
   "dependencies": {
+    "connect-history-api-fallback": "^1.1.0",
+    "history": "^1.13.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-redux": "^4.0.0",
+    "react-router": "^1.0.0",
+    "redux": "^3.0.4",
     "redux-router": "^1.0.0-beta4"
   },
   "devDependencies": {
