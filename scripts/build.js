@@ -19,7 +19,7 @@ function compile(watch) {
       .pipe(buffer())
       .pipe(sourcemaps.init({ loadMaps: true }))
       .pipe(sourcemaps.write('.'))
-      .pipe(gulp.dest(config.root.dest + config.tasks.build.dest))
+      .pipe(gulp.dest(config.root.dest + config.tasks.build.dest));
   }
 
   if (watch) {
