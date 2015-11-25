@@ -22,7 +22,7 @@ To alter where Gulp watches for files, or puts files after compile, do so in `./
 └──scripts/
     └──config.json
 ├──scss/
-├──src/
+└──src/
     └──components/
 └──index.js
 ```
